@@ -1,0 +1,28 @@
+$screen-sm: 481px;
+$screen-md: 769px;
+$screen-lg: 1025px;
+
+
+@mixin tbl {
+    @media (min-width: #{$screen-sm}) {
+        @content;
+    }
+}
+
+@mixin sml {
+    @media (min-width: #{$screen-md}) {
+        @content;
+    }
+}
+
+@mixin lgl {
+    @media (min-width: #{$screen-lg}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (max-width: $screen) {
+        @content;
+    }
+ }
