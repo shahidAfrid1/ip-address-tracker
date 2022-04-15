@@ -11,55 +11,64 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    
-    
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    
-    <link rel="stylesheet" href="/app/sass/style.css">
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
 
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  
+    <link rel="stylesheet" href="/app/sass/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
     <script src="/app/script/script.js" defer></script>
-    
+
     <title>Frontend Mentor | IP Address Tracker</title>
   </head>
   <body>
-    <header>
-      <h1>IP Address Tracker</h1>
-      <div class="search-bar">
-        <input type="text" name="" id="searchInput" placeholder="Search for any IP address or domain" />
-        <button type="button" id="goBtn"></button>
-      </div>
-      <div class="status-container">
-        <div>
-          <h2>IP Address</h2>
-          <p id="ipAddress">-</p>
-        </div>
-        <div>
-          <h2>Location</h2>
-          <p id="ipLocation">-</p>
-        </div>
-        <div>
-          <h2>Timezone</h2>
-          <p id="ipTimezone">-</p>
-        </div>
-        <div>
-          <h2>ISP</h2>
-          <p class="lastChild" id="ipIsp">-</p>
-        </div>
-      </div>
-    </header>
     <main>
+      <header>
+        <h1>IP Address Tracker</h1>
+        <form action="#" class="search-bar">
+          <input
+            type="text"
+            name=""
+            id="searchInput"
+            placeholder="Search for any IP address or domain"
+          />
+          <button type="button" id="goBtn"></button>
+        </form>
+        <div class="status-container">
+          <div>
+            <h2>IP Address</h2>
+            <p id="ipAddress">-</p>
+          </div>
+          <div>
+            <h2>Location</h2>
+            <p id="ipLocation">-</p>
+          </div>
+          <div>
+            <h2>Timezone</h2>
+            <p id="ipTimezone">-</p>
+          </div>
+          <div class="lastBorder">
+            <h2>ISP</h2>
+            <p class="lastChild" id="ipIsp">-</p>
+          </div>
+        </div> 
+      </header>
       <div id="map"></div>
     </main>
-    </body>
+  </body>
 </html>
